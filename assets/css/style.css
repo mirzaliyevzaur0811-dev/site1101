@@ -2,7 +2,7 @@
 .container {
     max-width: 1100px;
     margin: 2rem auto;
-    padding: 0 1rem;
+    padding: 0 2rem; /* increased padding to avoid touching screen edges */
 }
 .content-box {
     background: rgba(255,255,255,0.02); /* subtle panel on dark bg */
@@ -86,9 +86,10 @@ nav {
 .social-icons a:hover { color: var(--accent); }
 
 /* Project card layout & image sizing */
-.project-list {
+.project-list,
+.projects-grid {
     display: grid;
-    gap: 1.25rem;
+    gap: 40px; /* larger spacing between project cards */
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
 .project-card {

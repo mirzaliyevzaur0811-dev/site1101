@@ -122,6 +122,11 @@ nav {
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
 
+/* Background, Conducted Activities və Skills başlıqlarını narıncı etmək */
+.content-box h2, .content-box h3 {
+    color: var(--accent-color);
+}
+
 .project-card {
     background: var(--bg-panel);
     border-radius: 16px;
